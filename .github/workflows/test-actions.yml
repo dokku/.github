@@ -7,8 +7,8 @@ jobs:
     - uses: actions/checkout@master
     - name: Build all actions
       run: |
-        pip install --quiet --user wheel
-        pip install --quiet --user yamllint
+        pip install --quiet wheel
+        pip install --quiet yamllint
 
         for action in actions/*; do
           if [[ ! -d "$action" ]]; then
