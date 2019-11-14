@@ -7,7 +7,7 @@ jobs:
     - uses: actions/checkout@master
     - name: Build all actions
       run: |
-        apt install -qy yamllint
+        sudo apt install -qy yamllint
         which yamllint
 
         for action in actions/*; do
