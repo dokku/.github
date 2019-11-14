@@ -7,11 +7,12 @@ jobs:
     - uses: actions/checkout@master
     - name: Build all actions
       run: |
-        for f in actions/*; do
-          if [[ ! -d "$f" ]]; then
+        for action in actions/*; do
+          if [[ ! -d "$action" ]]; then
             continue
           fi
-          pushd "$f" >/dev/null
-          docker build -t "test-$f" .
+          echo "====> Linting $action"
+          pushd "$action" >/dev/null
+          docker build -t "test-$action" .
           popd >/dev/null
         done
