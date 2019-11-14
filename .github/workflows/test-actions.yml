@@ -8,7 +8,7 @@ jobs:
     - name: Build all actions
       run: |
         pip install wheel
-        pip install --quiet yamllint
+        pip install yamllint
         which yamllint
 
         for action in actions/*; do
