@@ -1,0 +1,6 @@
+# action.yml
+name: 'Label Repository'
+description: 'Labels repository according to the labels.yml in this repository'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'

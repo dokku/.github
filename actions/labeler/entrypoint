@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+main() {
+  if [[ -z "$GITHUB_REPOSITORY" ]]; then
+    echo "::error file=entrypoint,line=4,col=2::Missing GITHUB_REPOSITORY"
+    return 1
+  fi
+
+  if [[ -z "$GITHUB_ACCESS_TOKEN" ]]; then
+    echo "::error file=entrypoint,line=9,col=2::Missing GITHUB_ACCESS_TOKEN"
+    return 1
+  fi
+
+  labeler apply /app/label.yml --token "$GITHUB_ACCESS_TOKEN" --level 7 --repo "GITHUB_REPOSITORY"
+}
+
+main "$@"
