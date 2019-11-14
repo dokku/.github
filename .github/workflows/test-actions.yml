@@ -5,12 +5,13 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
     - uses: actions/checkout@master
-    - name: Build all actions
+    - name: Installing yamllint
       run: |
-        echo "====> Installing yamllint"
         export DEBIAN_FRONTEND=noninteractive
         sudo apt install -qy yamllint >/dev/null
 
+    - name: Build all actions
+      run: |
         for action in actions/*; do
           if [[ ! -d "$action" ]]; then
             continue
