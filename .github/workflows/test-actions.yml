@@ -7,7 +7,7 @@ jobs:
     - uses: actions/checkout@master
     - name: Build all actions
       run: |
-        pip install --quiet wheel
+        pip install wheel
         pip install --quiet yamllint
         which yamllint
 
