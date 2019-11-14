@@ -8,6 +8,7 @@ jobs:
     - name: Build all actions
       run: |
         echo "====> Installing yamllint"
+        export DEBIAN_FRONTEND=noninteractive
         sudo apt install -qy yamllint >/dev/null
 
         for action in actions/*; do
