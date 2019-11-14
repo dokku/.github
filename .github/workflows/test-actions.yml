@@ -11,5 +11,7 @@ jobs:
           if [[ ! -d "$f" ]]; then
             continue
           fi
-          echo "actions/$f"
+          pushd "$f" >/dev/null
+          docker build -t "test-$f" .
+          popd >/dev/null
         done
