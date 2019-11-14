@@ -7,15 +7,24 @@ jobs:
     - uses: actions/checkout@master
     - name: Build all actions
       run: |
-        sudo apt install -qy yamllint
-        which yamllint
+        echo "====> Installing yamllint"
+        sudo apt install -qy yamllint >/dev/null
 
         for action in actions/*; do
           if [[ ! -d "$action" ]]; then
             continue
           fi
+
           echo "====> Linting $action"
           pushd "$action" >/dev/null
-          docker build -t "test-$action" .
+          docker build -t "test-$action" . || {
+            echo "!     Failed to build $action"
+            exit 1
+          }
+
+          yamllint . || {
+            echo "!     Failed to lint $action"
+            exit 1
+          }
           popd >/dev/null
         done
