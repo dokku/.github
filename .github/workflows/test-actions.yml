@@ -9,6 +9,7 @@ jobs:
       run: |
         pip install --quiet wheel
         pip install --quiet yamllint
+        which yamllint
 
         for action in actions/*; do
           if [[ ! -d "$action" ]]; then
