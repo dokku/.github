@@ -7,4 +7,9 @@ jobs:
     - uses: actions/checkout@master
     - name: Build all actions
       run: |
-        ls -lah
+        pushd .github/actions >/dev/null
+        for f in *; do
+          if [ -d "$f" ]; then
+            echo "$f"
+          fi
+        done
