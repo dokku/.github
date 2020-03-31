@@ -1,3 +1,3 @@
 # Dokku .github org
 
-This repository holds repo-wide files.
+This repository holds org-wide files.
