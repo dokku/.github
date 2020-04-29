@@ -11,6 +11,7 @@ The following are examples of sponsored features added to Dokku:
 - [Buildpack management](https://github.com/dokku/dokku/issues/3256) via plugin.
 - Backup support for [datastore plugins](https://github.com/dokku/dokku-postgres/pull/86).
 - [Kubernetes integration](https://github.com/dokku/dokku-scheduler-kubernetes) for application deploys.
+- Complete HA integration with your cloud vendor of choice (AWS, Azure, DigitalOcean, GCP...)
 
 If you or your organization could benefit from sponsored Dokku development - or debugging complex issues related to using Dokku - the following are some bulletpoints that you might find useful:
 
