@@ -5,13 +5,14 @@ If there is some functionality missing from Dokku, outside of [contributing the 
 The following are examples of sponsored features added to Dokku:
 
 - Bespoke application deployment for self-hosted software. Recent examples include:
-  - [Metabase](https://metabase.com/): Business intelligence and analytics for your company 
-  - [The Lounge](https://thelounge.chat/): Self-hosted web IRC client
+  - [Metabase](https://metabase.com/): Business intelligence and analytics for your company.
+  - [The Lounge](https://thelounge.chat/): Self-hosted web IRC client.
   - [Zammad](https://zammad.org/): Open source user support/ticketing solution.
 - [Buildpack management](https://github.com/dokku/dokku/issues/3256) via plugin.
 - Backup support for [datastore plugins](https://github.com/dokku/dokku-postgres/pull/86).
 - [Kubernetes integration](https://github.com/dokku/dokku-scheduler-kubernetes) for application deploys.
-- Complete HA integration with your cloud vendor of choice (AWS, Azure, DigitalOcean, GCP...)
+- Complete HA integration with your cloud vendor of choice (AWS, Azure, DigitalOcean, GCP...).
+- Debugging Dokku features and functionality for use in specific cloud environments (with upstream changes as necessary).
 
 If you or your organization could benefit from sponsored Dokku development - or debugging complex issues related to using Dokku - the following are some bulletpoints that you might find useful:
 
