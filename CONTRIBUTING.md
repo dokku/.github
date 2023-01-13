@@ -48,7 +48,7 @@ encounter an issue. We always appreciate a well-written, thorough bug report,
 and will thank you for it!
 
 Sometimes, Dokku is missing a feature you need. In some cases, those features can
-be found in pre-existing [plugins](http://dokku.viewdocs.io/dokku/plugins/),
+be found in pre-existing [plugins](https://dokku.com/docs/community/plugins/),
 and we encourage our users to create and contribute such packages. From time to
 time, we will also pull plugins into the Dokku core when the task they solve is
 a common one for our users.
