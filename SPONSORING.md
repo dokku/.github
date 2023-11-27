@@ -24,4 +24,4 @@ If you or your organization could benefit from sponsored Dokku development - or 
 - The hourly rate begin at $200 USD per hour, paid before delivery of services. Longer engagements can be negotiated.
 - Payment can be done through a variety of methods, and billing can be sent if needed for your finance department.
 
-If the above seems like a good fit for you or your project, feel free to contact `@savant` on the [Gliderlabs Slack or Dokku Discord](https://dokku.com/docs/getting-started/where-to-get-help/#monitored-locations), or send an email to [email-for-consulting@josediazgonzalez.com](mailto:email-for-consulting@josediazgonz.com).
+If the above seems like a good fit for you or your project, feel free to contact `@savant` on the [Gliderlabs Slack or Dokku Discord](https://dokku.com/docs/getting-started/where-to-get-help/#monitored-locations), or send an email to [email-for-consulting@josediazgonzalez.com](mailto:email-for-consulting@josediazgonzalez.com).
