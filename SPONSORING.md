@@ -14,6 +14,8 @@ The following are examples of sponsored features added to Dokku:
 - Complete HA integration with your cloud vendor of choice (AWS, Azure, DigitalOcean, GCP...).
 - Debugging Dokku features and functionality for use in specific cloud environments (with upstream changes as necessary).
 - Traefik proxy support
+- OpenResty with auto-ssl support
+- Kubernetes K3S integration
 
 If you or your organization could benefit from sponsored Dokku development - or debugging complex issues related to using Dokku - the following are some bulletpoints that you might find useful:
 
